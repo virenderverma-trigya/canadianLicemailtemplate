@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LIC Insurance Email</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+
+.email-bg {
+  width: 100%;
+  padding: 20px 0;
+  background: #f4f4f4;
+}
+
+.email-border {
+  width: 640px;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 1px solid #e3e3e3;
+  background: #ffffff;
+  padding: 8px;
+}
+
+.email-inner {
+  border: 1px solid #f3c5c5;
+  padding: 15px 25px 20px;
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 8px 0;
+}
+.middle{
+   /* font-weight: bold; */
+   color: red;
+}
+.hello {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.signature {
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  color: #444;
+}
+
+.center-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.visa{
+  color: red;
+}
+
+.center-link a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+
+.footer {
+  text-align: center;
+  font-size: 11px;
+  color: #999;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+  margin-top: 10px;
+}
+
+.contact p {
+  margin-top: 20px;
+  color: #999;
+}
+
+
+    .social-icons{
+      position: relative;
+      top: 10px;
+      bottom: 20px;
+    }
+
+    .social-icons img {
+      width: 20px;
+      height: 20px;
+      margin: 0 3px;
+      vertical-align: middle;
+      margin-left: 10px;
+    
+      
+  
+    }
+
+
+.top-logo img,
+.hero img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.star-container {
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 220px;
+}
+
+.star {
+  font-size: 20px;
+  color: gold;
+}
+
+.five {
+  color: #555;
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .email-border {
+    width: 100% !important;
+    padding: 5px;
+  }
+
+  .email-inner {
+    padding: 15px 15px 20px;
+  }
+
+  p, ol, li {
+    font-size: 14px !important;
+  }
+
+  .top-logo img {
+    width: 90px;
+  }
+
+  .hero img {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .signature,
+  .center-link a {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+
+  .star {
+    font-size: 18px;
+  }
+
+}
+#update{
+  background-color: yellow;
+}
+#heading{
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 90px;
+  margin-right: 90px;
+
+}
+#sgst{
+  font-weight: 800;
+  color: rgb(46, 43, 43);
+  font-size: 12px;
+}
+
+  </style>
+</head>
+
+<body>
+  <table class="email-bg" cellpadding="0" cellspacing="0" align="center" width="100%">
+    <tr>
+      <td align="center">
+        <table class="email-border" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <table class="email-inner" cellpadding="0" cellspacing="0" width="100%">
+
+                
+                <tr>
+                  <td class="top-logo" align="left" style="padding-bottom:10px;">
+                    <img src="logo image.png" alt="LIC Insurance Logo" width="110">
+                  </td>
+                </tr>
+
+                
+                <tr>
+                  <td class="hero" align="center" style="padding-bottom:12px;">
+                    <img src="template banner.png" alt="Banner">
+                  </td>
+                </tr>
+                <tr> 
+                  <td><div class="content ">
+        <p style="text-align:center; font-size:12px;  position: relative; font-weight: bold; ">
+          For More Information <a href="#">Click Here</a>
+        </p></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="hello">
+                    Dear ${Policies.Client},
+                    </p>
+
+                    <p>
+                      This is a FINAL/ Friendly Reminder that Policy ${Policies.Policy Name}
+                    </p> 
+                      <p>
+                       ${Policies.Policy Type} reflects a Start Date of ${Policies.Policy Start Date}.
+                  </p> 
+                     <p id="update" >
+                      If you want to update your policy start date, then please click on the below button:
+                     </p>  <br>
+
+                     <div id="heading">
+                        Click Here To Change The Policy Start
+                     </div> 
+
+                     <div id="list">
+                       <ol>
+                        <li><p> Click on the Button "Change the Start date"</p> </li>
+                        <li> <p>Enter the New Effective Date and your Name </p> </li>
+                        <li><p>Click on "SUBMIT</p></li>
+                       </ol>
+                     </div>
+
+                     <p>Having difficulties? We, at Canadian L.I.C. will be happy to assist you.</p> <br>
+                     <p> <span id="sgst" > SUGGESTION:</span> Don't have Confirmed date? Move the date by 4-6 months, you can prepone it or postpone it again, as needed.</p> <br> 
+                     <p>For any assistance regarding Change to the Start Date, Please Reply back to this Email. To Make or Confirm the Changes, Office requires 24 to 48 Business Working Days Hours.</p><br>
+                     
+                  <p class="middle" >
+                     IMPORTANT NOTE: To change the policy Starts Date after the policy already started. Please provide a copy of the passport with all the pages (Blank ones also) with a current date (recent) newspaper as background to confirm it is a recent copy. $50 Admin Fees will be charged Per Policy.
+
+                    </p> <br>
+                     <p>
+                      The Policy will commence very shortly. Kindly note the Commencement Date and confirm that no rescheduling is required of the Start Date. In absence of any information, the Policy will commence on ${Policies.Policy Start Date} as scheduled.
+                    </p> <br>
+                   <p>Below in Case: If moving the Start Date by a Month without Confirmed Travel Tickets.</p> <br>
+                    
+                   <p>Please note:- Some Companies have started charging $25 Dollars for Monthly Changes So we can not amend the effective date a month at a time without incurring change fees ($25 per change). However, we can advance the effective date by 6 months (180 days). Once the insured has their <span class="visa" > Visa Approved and Travel Tickets Confirmed, </span> you would need to contact us again in order for us to change the effective date to match their arrival. </p> <br>
+                   
+                    <p> WhatsApp: <a href=" "> +1(905)744-1100</a> </p> 
+                    <p>Phone:  416-676-6200(Mobile) </p>
+                    <p>Phone:416-543-9000(Office)  </p>
+                    <p>Email: <a href="">Harpreet.puri@canadianlic.com</a> </p>
+             
+                  
+                    <div class="signature">
+                      Canadian L.I.C. Administration
+                    </div>
+
+                    <div class="center-link">
+                      <a href="#">www.CanadianLIC.com</a>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Footer -->
+                <tr>
+                  <td class="footer">
+                    2969 Bovaird Dr East, Unit 2 Brampton, ON L6S 0C6 <br>
+                    (Airport Rd. & Bovaird Dr. E intersection near LA Fitness)
+                    <div class="contact">
+                      <p>1-844-542-4678 <br> Quote@CanadianLIC.com</p>
+                    </div>
+                    
+                    <div class="social-icons">
+          <a href="#"><img src="fb red.png" alt="Facebook"></a>
+          <a href="#"><img src="twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+          
+        </div>
+                    <!-- <div class="social" style="margin-top:10px; ">
+                      <a href="#"><img src="./fb red.png" alt="" ></a>
+                      <a href="#"><img src="./linkedin.png" alt=""></a>
+                      <a href="#"><img src="./twitter.png" alt=""></a>
+                    </div> -->
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
